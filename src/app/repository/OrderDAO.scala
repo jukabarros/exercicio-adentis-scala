@@ -94,7 +94,6 @@ class OrderDAO {
 	  itens.foreach(item => {
 	    if (item.product.name.equals(I_PHONE_12)) {
 	    	orders ++= this.createOrdersIphone12(item)
-	    	
 	    } else if (item.product.name.equals(SAMSUNG_A1)) {
 	      orders ++= this.createOrdersSamsung(item)
 	    } else {
@@ -104,6 +103,5 @@ class OrderDAO {
 	  })
 	 orders
 	}
-
 
 }
